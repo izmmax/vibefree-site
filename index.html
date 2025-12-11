@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIBE FREE — Terminal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .terminal {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .cursor {
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 49% { opacity: 1; }
+            50%, 100% { opacity: 0; }
+        }
+        
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #0f0;
+        }
+        
+        .line {
+            margin-bottom: 10px;
+        }
+        
+        .prompt {
+            color: #0ff;
+        }
+        
+        a {
+            color: #0ff;
+            text-decoration: underline;
+        }
+        
+        a:hover {
+            color: #fff;
+        }
+        
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 2px solid #0f0;
+            color: #0f0;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .button:hover {
+            background: #0f0;
+            color: #000;
+        }
+        
+        .section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #0f0;
+        }
+        
+        input {
+            background: #000;
+            border: 1px solid #0f0;
+            color: #0f0;
+            padding: 10px;
+            font-family: 'Courier New', monospace;
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        input:focus {
+            outline: none;
+            border-color: #0ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <pre>
+ ___      ___  __     _______    _______       _______  _______   _______   _______ 
+|   |    |   ||  |   |   _   \  |   ____|     |   ____||   ____| |   ____| |   ____|
+|   |    |   ||  |   |  |_)  |  |  |__        |  |__   |  |__    |  |__    |  |__   
+|   |    |   ||  |   |   _  <   |   __|       |   __|  |   __|   |   __|   |   __|  
+ \  `----'  / |  |   |  |_)  |  |  |____      |  |     |  |      |  |____  |  |____ 
+  \______/   |__|   |_______/   |_______|     |__|     |__|      |_______| |_______|
+        </pre>
+        
+        <div class="line"><span class="prompt">root@vibe-free:~$</span> cat WELCOME.txt</div>
+        
+        <h1>WELCOME TO THE TERMINAL<span class="cursor">_</span></h1>
+        
+        <div class="line">System initialized...</div>
+        <div class="line">Loading manifesto...</div>
+        <div class="line">Connection established.</div>
+        <br>
+        
+        <div class="line">> VIBE FREE is not a marketplace.</div>
+        <div class="line">> VIBE FREE is not a social network.</div>
+        <div class="line">> VIBE FREE is a FLOW.</div>
+        <br>
+        
+        <div class="line">Here you exchange:</div>
+        <div class="line">  — Ideas for energy</div>
+        <div class="line">  — Energy for goods</div>
+        <div class="line">  — Goods for crypto</div>
+        <div class="line">  — Crypto for courses</div>
+        <div class="line">  — Courses for new ideas</div>
+        <br>
+        
+        <div class="line">The circle is complete. The flow continues.</div>
+        
+        <div class="section">
+            <div class="line"><span class="prompt">root@vibe-free:~$</span> cat RULES.txt</div>
+            <br>
+            <div class="line">1. TEXT ONLY — No graphics. Only essence.</div>
+            <div class="line">2. P2P — We don't hold your money. You deal directly.</div>
+            <div class="line">3. WEB3 REPUTATION — Every deal = blockchain proof.</div>
+            <div class="line">4. LEGAL — We follow the law. Always.</div>
+            <div class="line">5. COMMUNITY — Bad actors get banned. No mercy.</div>
+        </div>
+        
+        <div class="section">
+            <div class="line"><span class="prompt">root@vibe-free:~$</span> cat HOW_IT_WORKS.txt</div>
+            <br>
+            <div class="line">STEP 1: Join Telegram Bot</div>
+            <div class="line">STEP 2: Post what you HAVE and what you NEED</div>
+            <div class="line">STEP 3: Someone responds</div>
+            <div class="line">STEP 4: You negotiate via encrypted chat</div>
+            <div class="line">STEP 5: Complete the deal</div>
+            <div class="line">STEP 6: Leave review → Reputation updated on blockchain</div>
+            <br>
+            <div class="line">Example:</div>
+            <div class="line" style="color: #ff0;">  > I HAVE: Startup idea (fintech)</div>
+            <div class="line" style="color: #ff0;">  > I NEED: 3 hours legal consultation</div>
+            <div class="line" style="color: #ff0;">  > I OFFER: Landing page design OR 0.05 ETH</div>
+        </div>
+        
+        <div class="section">
+            <div class="line"><span class="prompt">root@vibe-free:~$</span> cat TECH_STACK.txt</div>
+            <br>
+            <div class="line">INTERFACE: Telegram Bot (text-based)</div>
+            <div class="line">PAYMENTS: Telegram Wallet + Banana Gun API</div>
+            <div class="line">REPUTATION: TON Blockchain (NFT-based reviews)</div>
+            <div class="line">DATABASE: Supabase (PostgreSQL)</div>
+            <div class="line">ENCRYPTION: End-to-end (Telegram native)</div>
+        </div>
+        
+        <div class="section">
+            <div class="line"><span class="prompt">root@vibe-free:~$</span> cat STATUS.txt</div>
+            <br>
+            <div class="line">PHASE: CLOSED ALPHA</div>
+            <div class="line">CAPACITY: 100 users</div>
+            <div class="line">LAUNCH: 3 days from now</div>
+            <div class="line">ACCESS: Invitation only</div>
+        </div>
+        
+        <div class="section">
+            <div class="line"><span class="prompt">root@vibe-free:~$</span> cat JOIN.txt</div>
+            <br>
+            <div class="line">Ready to enter the flow?</div>
+            <br>
+            
+            <a href="https://t.me/YOUR_BOT_USERNAME" class="button">JOIN TELEGRAM BOT</a>
+            
+            <br><br>
+            <div class="line">Or request early access:</div>
+            
+            <input type="email" id="email" placeholder="your@email.com">
+            <a href="#" class="button" onclick="submitEmail(); return false;">REQUEST ACCESS</a>
+        </div>
+        
+        <div class="section">
+            <div class="line"><span class="prompt">root@vibe-free:~$</span> cat FAQ.txt</div>
+            <br>
+            <div class="line">Q: Is this legal?</div>
+            <div class="line">A: Yes. We comply with Kazakhstan law. P2P exchanges are legal.</div>
+            <br>
+            <div class="line">Q: Do you hold my money?</div>
+            <div class="line">A: No. All transactions are direct between users.</div>
+            <br>
+            <div class="line">Q: What if someone scams me?</div>
+            <div class="line">A: Reputation system prevents this. Scammers get banned + negative on-chain proof.</div>
+            <br>
+            <div class="line">Q: Why text only?</div>
+            <div class="line">A: Because essence > aesthetics. Text forces clarity. No distractions.</div>
+            <br>
+            <div class="line">Q: Can I use fiat money?</div>
+            <div class="line">A: Yes. You negotiate payment method with your trading partner.</div>
+        </div>
+        
+        <div class="section">
+            <div class="line"><span class="prompt">root@vibe-free:~$</span> cat MANIFESTO.txt</div>
+            <br>
+            <div class="line">We believe in MANIFESTUS — making invisible visible.</div>
+            <div class="line">Every thought can become action.</div>
+            <div class="line">Every idea can become goods.</div>
+            <div class="line">Every exchange can become transformation.</div>
+            <br>
+            <div class="line">VIBE FREE is not a platform.</div>
+            <div class="line">VIBE FREE is a STATE.</div>
+            <br>
+            <div class="line">When you enter the flow.</div>
+            <div class="line">When you give and receive simultaneously.</div>
+            <div class="line">When you understand: everything already exists, you just need to exchange.</div>
+            <br>
+            <div class="line" style="color: #0ff;">The flow begins with you.</div>
+        </div>
+        
+        <div class="section">
+            <div class="line"><span class="prompt">root@vibe-free:~$</span> cat CONTACT.txt</div>
+            <br>
+            <div class="line">TELEGRAM: <a href="https://t.me/vibefree_support">@vibefree_support</a></div>
+            <div class="line">EMAIL: <a href="mailto:hello@vibefree.io">hello@vibefree.io</a></div>
+            <div class="line">MANIFESTO: <a href="#">Read full version</a></div>
+        </div>
+        
+        <br><br>
+        <div class="line"><span class="prompt">root@vibe-free:~$</span> <span class="cursor">_</span></div>
+    </div>
+    
+    <script>
+        function submitEmail() {
+            const email = document.getElementById('email').value;
+            if (email) {
+                alert('Access request sent for: ' + email + '\n\nWe will contact you within 24 hours.');
+                document.getElementById('email').value = '';
+            } else {
+                alert('Please enter your email address.');
+            }
+        }
+    </script>
+</body>
+</html>
